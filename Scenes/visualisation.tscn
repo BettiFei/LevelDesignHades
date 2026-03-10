@@ -19,7 +19,7 @@ tile_map_data = PackedByteArray("AADx/wQABAAEAAIAAADx/wMABAAEAAIAAADx/wIABAAEAAI
 tile_set = ExtResource("1_rovua")
 
 [node name="Level2" type="TileMapLayer" parent="."]
-z_index = 1
+z_index = 2
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AADw/wMABAAEAAIAAADw/wIABAAEAAIAAADw/wEABAAEAAIAAADw/wAABAAEAAIAAADw////BAAEAAIAAADw//7/BAAEAAIAAADw//3/BAAEAAIAAADw//z/BAAEAAIAAADz/wAAAgAHAAAAAADz////AgAHAAAAAADz//7/AgAHAAAAAAD0/wIAAQAIAAQAAAAHAPL/AgAFAAAAAQAGAPL/AgAFAAAAAQAIAPL/AgAFAAAAAQD7//7/AgADAAAAAQD8//7/AgADAAAAAQD9//b/AQAJAAQAAQA=")
 tile_set = ExtResource("1_rovua")

@@ -1,7 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://cy5n3fmackde2"]
+[gd_scene load_steps=11 format=3 uid="uid://cy5n3fmackde2"]
 
 [ext_resource type="Script" uid="uid://d31316k1ssank" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://kauqiewpw6ny" path="res://Assets/Human/0/Human_0_Idle0.png" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://b2hjf2xy5bnbr" path="res://Assets/Human/1/Human_1_Idle0.png" id="3_f1ek2"]
+[ext_resource type="Texture2D" uid="uid://cowkaico30jgl" path="res://Assets/Human/2/Human_2_Idle0.png" id="4_tx1dd"]
+[ext_resource type="Texture2D" uid="uid://dtw7dsrk37qh3" path="res://Assets/Human/3/Human_3_Idle0.png" id="5_gymyn"]
+[ext_resource type="Texture2D" uid="uid://80p3oq1qhxlc" path="res://Assets/Human/4/Human_4_Idle0.png" id="6_pu2lt"]
+[ext_resource type="Texture2D" uid="uid://j6lgkctuhc4x" path="res://Assets/Human/5/Human_5_Idle0.png" id="7_ukyrk"]
+[ext_resource type="Texture2D" uid="uid://cfiat6d4lqpjt" path="res://Assets/Human/6/Human_6_Idle0.png" id="8_7dp3o"]
+[ext_resource type="Texture2D" uid="uid://cfynv6y3wp4as" path="res://Assets/Human/7/Human_7_Idle0.png" id="9_h4iuc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{
@@ -12,6 +19,62 @@ animations = [{
 "loop": true,
 "name": &"idle0",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_f1ek2")
+}],
+"loop": true,
+"name": &"idle1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_tx1dd")
+}],
+"loop": true,
+"name": &"idle2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gymyn")
+}],
+"loop": true,
+"name": &"idle3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_pu2lt")
+}],
+"loop": true,
+"name": &"idle4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ukyrk")
+}],
+"loop": true,
+"name": &"idle5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_7dp3o")
+}],
+"loop": true,
+"name": &"idle6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_h4iuc")
+}],
+"loop": true,
+"name": &"idle7",
+"speed": 5.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
@@ -21,7 +84,7 @@ speed = 600
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2, -196)
 sprite_frames = SubResource("SpriteFrames_cvnsp")
-animation = &"idle0"
+animation = &"idle3"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-38, 0, -24, -15, 0, -20, 24, -15, 38, 0, 24, 15, 0, 20, -24, 15)
