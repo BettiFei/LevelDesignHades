@@ -54,14 +54,14 @@ tile_set = ExtResource("1_mi8gb")
 
 [node name="Label_N-01" type="Label" parent="Labels"]
 z_index = 19
-offset_left = 1635.0
-offset_top = -1224.0
-offset_right = 1707.0
-offset_bottom = -1179.0
-theme_override_colors/font_color = Color(1, 0.8392157, 0.80784315, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+offset_left = 1633.0
+offset_top = -1228.0
+offset_right = 1718.0
+offset_bottom = -1175.0
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "N-01"
 
 [node name="Label_N-04" type="Label" parent="Labels"]
@@ -70,10 +70,10 @@ offset_left = 1976.0
 offset_top = -1312.0
 offset_right = 2048.0
 offset_bottom = -1267.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "N-04"
 
 [node name="Label_T-01" type="Label" parent="Labels"]
@@ -82,10 +82,10 @@ offset_left = 1665.0
 offset_top = -1475.0
 offset_right = 1737.0
 offset_bottom = -1430.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "T-01"
 
 [node name="Label_T-02" type="Label" parent="Labels"]
@@ -94,10 +94,10 @@ offset_left = 2301.0
 offset_top = -1144.0
 offset_right = 2373.0
 offset_bottom = -1099.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "T-02"
 
 [node name="Label_T-03" type="Label" parent="Labels"]
@@ -106,10 +106,10 @@ offset_left = 3383.0
 offset_top = -2011.0
 offset_right = 3455.0
 offset_bottom = -1966.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "T-03"
 
 [node name="Label_F-01" type="Label" parent="Labels"]
@@ -118,10 +118,10 @@ offset_left = 2849.0
 offset_top = -1717.0
 offset_right = 2921.0
 offset_bottom = -1624.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-01
 "
 
@@ -131,10 +131,10 @@ offset_left = 3017.0
 offset_top = -2071.0
 offset_right = 3089.0
 offset_bottom = -1978.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-02
 "
 
@@ -144,10 +144,10 @@ offset_left = 3511.0
 offset_top = -1811.0
 offset_right = 3583.0
 offset_bottom = -1718.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-02
 "
 
@@ -157,10 +157,10 @@ offset_left = 1996.0
 offset_top = -1751.0
 offset_right = 2068.0
 offset_bottom = -1658.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-05"
 
 [node name="Label_F-05-2" type="Label" parent="Labels"]
@@ -169,10 +169,10 @@ offset_left = 2818.0
 offset_top = -1374.0
 offset_right = 2890.0
 offset_bottom = -1281.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-05"
 
 [node name="Label_F-07-1" type="Label" parent="Labels"]
@@ -181,10 +181,10 @@ offset_left = 2476.0
 offset_top = -2027.0
 offset_right = 2548.0
 offset_bottom = -1934.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-07"
 
 [node name="Label_F-07-2" type="Label" parent="Labels"]
@@ -193,22 +193,22 @@ offset_left = 3332.0
 offset_top = -1614.0
 offset_right = 3404.0
 offset_bottom = -1521.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-07"
 
 [node name="Label_F-08" type="Label" parent="Labels"]
 z_index = 19
-offset_left = 2105.0
-offset_top = -1426.0
-offset_right = 2177.0
-offset_bottom = -1333.0
-theme_override_colors/font_color = Color(1, 0.8405871, 0.80897325, 1)
-theme_override_colors/font_outline_color = Color(0.8509804, 0, 0, 1)
+offset_left = 2145.0
+offset_top = -1398.0
+offset_right = 2221.0
+offset_bottom = -1345.0
+theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
+theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
 theme_override_constants/outline_size = 7
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 38
 text = "F-08"
 
 [node name="SpeechBubble" type="Sprite2D" parent="Labels"]
@@ -220,4 +220,4 @@ texture = ExtResource("2_fg5sb")
 [node name="Player" parent="." instance=ExtResource("2_ry522")]
 z_index = 20
 y_sort_enabled = true
-position = Vector2(0, 72)
+position = Vector2(-304, 90)
