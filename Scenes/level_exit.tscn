@@ -1,14 +1,17 @@
-[gd_scene load_steps=8 format=4 uid="uid://bbgnflrs1maw0"]
+[gd_scene load_steps=9 format=4 uid="uid://bbgnflrs1maw0"]
 
 [ext_resource type="PackedScene" uid="uid://c8xaipvs243xi" path="res://Scenes/world_light.tscn" id="1_7x8y2"]
 [ext_resource type="Script" uid="uid://c6w4ykiefo25c" path="res://Scripts/level_exit.gd" id="1_61di1"]
 [ext_resource type="TileSet" uid="uid://bxcwvv3usqcu" path="res://Resources/blockout_tileset.tres" id="1_845nk"]
 [ext_resource type="PackedScene" uid="uid://cy5n3fmackde2" path="res://Scenes/player.tscn" id="2_tuocj"]
 [ext_resource type="PackedScene" uid="uid://c8p58re65dohs" path="res://Scenes/light_exit.tscn" id="3_61di1"]
-[ext_resource type="Texture2D" uid="uid://b5oecqr0wk72n" path="res://Assets/Other/vista_olympus.jpg" id="6_6blap"]
+[ext_resource type="Texture2D" uid="uid://60bmub32t2lr" path="res://Assets/Other/vista_olympus_2.jpg" id="5_6blap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7x8y2"]
 size = Vector2(656.6072, 608.1967)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6blap"]
+size = Vector2(584.1024, 215.5122)
 
 [node name="LevelExit" type="Node2D"]
 y_sort_enabled = true
@@ -92,7 +95,7 @@ tile_set = ExtResource("1_845nk")
 z_index = 1
 y_sort_enabled = true
 position = Vector2(0, 500)
-tile_map_data = PackedByteArray("AAD1/+X/HAAIAAAAAAD1/+T/HAAIAAAAAAD0/+X/HAAIAAAAAAD0/+T/HAAIAAAAAAD2/+X/HAAAAAAAAAD2/+T/HAAAAAAAAAD0/+P/HAAIAAAAAAD0/+L/HAAIAAAAAAD0/+H/HAAIAAAAAAD1/+H/HAAIAAAAAAD1/+D/HAAIAAAAAAD2/+D/HAAAAAAAAAD2/+H/HAAAAAAAAAD2/+L/HAAAAAAAAAD2/+P/HAAAAAAAAAD1/+L/HAAIAAAAAAD1/+P/HAAIAAAAAAD0/+D/HAAIAAAAAAD0/9//HAAIAAAAAAD1/9//HAAIAAAAAAD2/9//HAAAAAAAAAD1/+b/HAACAAAAAAD2/+b/HAAGAAAAAAD0/+b/HAAHAAAAAAD0/97/HAAIAAAAAADz/97/HAAIAAAAAADz/93/HAAIAAAAAADy/93/HAAIAAAAAADx/93/HAAIAAAAAADx/9z/HAAIAAAAAADy/97/HAAIAAAAAADw/93/HAAIAAAAAADw/9z/HAAIAAAAAADw/9v/HAAIAAAAAADw/9r/HAAIAAAAAADx/9n/HAAIAAAAAADy/9n/HAAIAAAAAADz/9j/HAAIAAAAAAD0/9j/HAAIAAAAAAD0/9n/HAAIAAAAAAD1/9n/HAAIAAAAAAD1/9j/HAAIAAAAAAD2/9j/HAAIAAAAAAD3/9j/HAAIAAAAAADy/9j/HAAIAAAAAAD0/9f/HAAIAAAAAAD1/9f/HAAIAAAAAAD2/9f/HAAIAAAAAAD4/9j/HAAIAAAAAAD5/9n/HAAIAAAAAAD6/9r/HAAIAAAAAAD4/97/HAAIAAAAAAD3/97/HAAIAAAAAAD2/97/HAAIAAAAAAD1/97/HAAIAAAAAAD0/93/HAAIAAAAAADz/9n/HAAIAAAAAADz/9r/HAAIAAAAAADy/9r/HAAIAAAAAADx/9r/HAAIAAAAAADx/9v/HAAIAAAAAADy/9v/HAAIAAAAAADy/9z/HAAIAAAAAADz/9z/HAAIAAAAAADz/9v/HAAIAAAAAAD0/9v/HAAIAAAAAAD0/9z/HAAIAAAAAAD0/9r/HAAIAAAAAAD1/9v/HAAIAAAAAAD1/9z/HAAIAAAAAAD1/9r/HAAIAAAAAAD2/9n/HAAIAAAAAAD2/9r/HAAIAAAAAAD2/9v/HAAIAAAAAAD2/9z/HAAIAAAAAAD3/9z/HAAIAAAAAAD3/9r/HAAIAAAAAAD3/9v/HAAIAAAAAAD3/9n/HAAIAAAAAAD6/9v/HAAIAAAAAAD6/9z/HAAIAAAAAAD6/93/HAAIAAAAAAD5/93/HAAIAAAAAAD4/93/HAAIAAAAAAD3/93/HAAIAAAAAAD2/93/HAAIAAAAAAD1/93/HAAIAAAAAAD4/9n/HAAIAAAAAAD4/9r/HAAIAAAAAAD4/9v/HAAIAAAAAAD4/9z/HAAIAAAAAAD5/9r/HAAIAAAAAAD5/9v/HAAIAAAAAAD5/9z/HAAIAAAAAAA=")
+tile_map_data = PackedByteArray("AAD1/+X/HAAIAAAAAAD1/+T/HAAIAAAAAAD0/+X/HAAIAAAAAAD0/+T/HAAIAAAAAAD2/+X/HAAAAAAAAAD2/+T/HAAAAAAAAAD0/+P/HAAIAAAAAAD0/+L/HAAIAAAAAAD0/+H/HAAIAAAAAAD1/+H/HAAIAAAAAAD1/+D/HAAIAAAAAAD2/+D/HAAAAAAAAAD2/+H/HAAAAAAAAAD2/+L/HAAAAAAAAAD2/+P/HAAAAAAAAAD1/+L/HAAIAAAAAAD1/+P/HAAIAAAAAAD0/+D/HAAIAAAAAAD0/9//HAAIAAAAAAD1/9//HAAIAAAAAAD2/9//HAAAAAAAAAD1/+b/HAACAAAAAAD2/+b/HAAGAAAAAAD0/+b/HAAHAAAAAAD0/97/HAAIAAAAAADz/97/HAAIAAAAAADz/93/HAAIAAAAAADy/93/HAAIAAAAAADx/93/HAAIAAAAAADx/9z/HAAIAAAAAADy/97/HAAIAAAAAADw/93/HAAIAAAAAADw/9z/HAAIAAAAAADw/9v/HAAIAAAAAADw/9r/HAAIAAAAAADx/9n/HAAIAAAAAADy/9n/HAAIAAAAAADz/9j/HAAIAAAAAAD0/9j/HAAIAAAAAAD0/9n/HAAIAAAAAAD1/9n/HAAIAAAAAAD1/9j/HAAIAAAAAAD2/9j/HAAIAAAAAAD3/9j/HAAIAAAAAADy/9j/HAAIAAAAAAD0/9f/HAAIAAAAAAD1/9f/HAAIAAAAAAD2/9f/HAAIAAAAAAD4/9j/HAAIAAAAAAD5/9n/HAAIAAAAAAD6/9r/HAAIAAAAAAD4/97/HAAIAAAAAAD3/97/HAAIAAAAAAD2/97/HAAIAAAAAAD1/97/HAAIAAAAAAD0/93/HAAIAAAAAADz/9n/HAAIAAAAAADz/9r/HAAIAAAAAADy/9r/HAAIAAAAAADx/9r/HAAIAAAAAADx/9v/HAAIAAAAAADy/9v/HAAIAAAAAADy/9z/HAAIAAAAAADz/9z/HAAIAAAAAADz/9v/HAAIAAAAAAD0/9v/HAAIAAAAAAD0/9z/HAAIAAAAAAD0/9r/HAAIAAAAAAD1/9v/HAAIAAAAAAD1/9z/HAAIAAAAAAD1/9r/HAAIAAAAAAD2/9n/HAAIAAAAAAD2/9r/HAAIAAAAAAD2/9v/HAAIAAAAAAD2/9z/HAAIAAAAAAD3/9z/HAAIAAAAAAD3/9r/HAAIAAAAAAD3/9v/HAAIAAAAAAD3/9n/HAAIAAAAAAD6/9v/HAAIAAAAAAD6/9z/HAAIAAAAAAD6/93/HAAIAAAAAAD5/93/HAAIAAAAAAD4/93/HAAIAAAAAAD3/93/HAAIAAAAAAD2/93/HAAIAAAAAAD1/93/HAAIAAAAAAD4/9n/HAAIAAAAAAD4/9r/HAAIAAAAAAD4/9v/HAAIAAAAAAD4/9z/HAAIAAAAAAD5/9r/HAAIAAAAAAD5/9v/HAAIAAAAAAD5/9z/HAAIAAAAAADz/9//HAAIAAAABADy/9//HAAIAAAABADx/9//HAAIAAAABADx/97/HAAIAAAABADw/97/HAAIAAAABADv/97/HAAIAAAABADv/93/HAAIAAAABADv/9z/HAAIAAAABADv/9v/HAAIAAAABADv/9r/HAAIAAAABADv/9n/HAAIAAAABADw/9n/HAAIAAAABADw/9j/HAAIAAAABADx/9j/HAAIAAAABADx/9f/HAAIAAAABADy/9f/HAAIAAAABADz/9f/HAAIAAAABADz/9b/HAAIAAAABAD0/9b/HAAIAAAABAD1/9b/HAAIAAAABAD2/9b/HAAIAAAABAD3/9b/HAAIAAAABAD3/9f/HAAIAAAABAD4/9f/HAAIAAAABAD5/9f/HAAIAAAABAD5/9j/HAAIAAAABAD6/9j/HAAIAAAABAD6/9n/HAAIAAAABAD7/9n/HAAIAAAABAD7/9r/HAAIAAAABAD7/9v/HAAIAAAABAD7/9z/HAAIAAAABAD7/93/HAAIAAAABAD7/97/HAAIAAAABAD6/97/HAAIAAAABAD5/97/HAAIAAAABAD5/9//HAAIAAAABAD4/9//HAAIAAAABAD3/9//HAAIAAAABAA=")
 tile_set = ExtResource("1_845nk")
 
 [node name="01Walls" type="TileMapLayer" parent="TileMaps"]
@@ -115,14 +118,26 @@ tile_set = ExtResource("1_845nk")
 z_index = 2
 position = Vector2(-53, -53)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="LightEffectArea" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LightEffectArea"]
 z_index = 20
 position = Vector2(1704.7108, -1547.4537)
 rotation = 0.48086452
 scale = Vector2(0.9999999, 0.9999999)
 shape = SubResource("RectangleShape2D_7x8y2")
+
+[node name="VistaArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VistaArea"]
+z_index = 20
+position = Vector2(4005.8896, -2791.1733)
+rotation = 0.48869228
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_6blap")
+
+[node name="VistaMarker" type="Marker2D" parent="."]
+position = Vector2(4768, -3100.4)
 
 [node name="Label_V-02" type="Label" parent="."]
 z_index = 19
@@ -139,15 +154,14 @@ theme_override_font_sizes/font_size = 38
 text = "V-02"
 
 [node name="Vista" type="Sprite2D" parent="."]
-position = Vector2(4580, -3080.0002)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("6_6blap")
-region_enabled = true
+position = Vector2(5403, -3095.4)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_6blap")
 region_rect = Rect2(0, 0, 1200, 732.7758)
 
 [node name="Player" parent="." instance=ExtResource("2_tuocj")]
 z_index = 20
-position = Vector2(-72, 92)
+position = Vector2(3491, -2536)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -171,5 +185,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 0.95686275, 0.8, 0)
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_light_effect_area_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_light_effect_area_body_exited"]
+[connection signal="body_entered" from="LightEffectArea" to="." method="_on_light_effect_area_body_entered"]
+[connection signal="body_exited" from="LightEffectArea" to="." method="_on_light_effect_area_body_exited"]
+[connection signal="body_entered" from="VistaArea" to="." method="_on_vista_area_body_entered"]
+[connection signal="body_exited" from="VistaArea" to="." method="_on_vista_area_body_exited"]
