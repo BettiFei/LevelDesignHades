@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bbgnflrs1maw0"]
+
+[node name="LevelExit" type="Node2D"]

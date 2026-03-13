@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://y53qrppwpmk5"]
+[gd_scene load_steps=6 format=4 uid="uid://y53qrppwpmk5"]
 
+[ext_resource type="PackedScene" uid="uid://c8xaipvs243xi" path="res://Scenes/world_light.tscn" id="1_30bqu"]
 [ext_resource type="TileSet" uid="uid://bxcwvv3usqcu" path="res://Resources/blockout_tileset.tres" id="1_mi8gb"]
 [ext_resource type="Texture2D" uid="uid://dysw67qjc0xfy" path="res://Assets/Other/speech_bubble.png" id="2_fg5sb"]
 [ext_resource type="PackedScene" uid="uid://cy5n3fmackde2" path="res://Scenes/player.tscn" id="2_ry522"]
@@ -8,10 +9,7 @@
 [node name="LevelEntrance" type="Node2D"]
 y_sort_enabled = true
 
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-color = Color(0.972549, 0.5372549, 0.49803922, 1)
-energy = 0.4
-blend_mode = 1
+[node name="WorldLight" parent="." instance=ExtResource("1_30bqu")]
 
 [node name="TileMaps" type="Node" parent="."]
 
@@ -64,9 +62,11 @@ offset_left = 1633.0
 offset_top = -1228.0
 offset_right = 1718.0
 offset_bottom = -1175.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "N-01"
 
@@ -76,9 +76,11 @@ offset_left = 1976.0
 offset_top = -1312.0
 offset_right = 2048.0
 offset_bottom = -1267.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "N-04"
 
@@ -88,9 +90,11 @@ offset_left = 1665.0
 offset_top = -1475.0
 offset_right = 1737.0
 offset_bottom = -1430.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "T-01"
 
@@ -100,9 +104,11 @@ offset_left = 2301.0
 offset_top = -1144.0
 offset_right = 2373.0
 offset_bottom = -1099.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "T-02"
 
@@ -112,9 +118,11 @@ offset_left = 3383.0
 offset_top = -2011.0
 offset_right = 3455.0
 offset_bottom = -1966.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "T-03"
 
@@ -124,9 +132,11 @@ offset_left = 2849.0
 offset_top = -1717.0
 offset_right = 2921.0
 offset_bottom = -1624.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-01
 "
@@ -137,9 +147,11 @@ offset_left = 3017.0
 offset_top = -2071.0
 offset_right = 3089.0
 offset_bottom = -1978.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-02
 "
@@ -150,9 +162,11 @@ offset_left = 3511.0
 offset_top = -1811.0
 offset_right = 3583.0
 offset_bottom = -1718.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-02
 "
@@ -163,9 +177,11 @@ offset_left = 1996.0
 offset_top = -1751.0
 offset_right = 2068.0
 offset_bottom = -1658.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-05"
 
@@ -175,9 +191,11 @@ offset_left = 2818.0
 offset_top = -1374.0
 offset_right = 2890.0
 offset_bottom = -1281.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-05"
 
@@ -187,9 +205,11 @@ offset_left = 2476.0
 offset_top = -2027.0
 offset_right = 2548.0
 offset_bottom = -1934.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-07"
 
@@ -199,9 +219,11 @@ offset_left = 3332.0
 offset_top = -1614.0
 offset_right = 3404.0
 offset_bottom = -1521.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-07"
 
@@ -211,9 +233,11 @@ offset_left = 2145.0
 offset_top = -1398.0
 offset_right = 2221.0
 offset_bottom = -1345.0
-theme_override_colors/font_color = Color(0.6011868, 0.31521335, 0.001955071, 1)
-theme_override_colors/font_outline_color = Color(1, 0.8153644, 0.6726642, 1)
-theme_override_constants/outline_size = 7
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
 theme_override_font_sizes/font_size = 38
 text = "F-08"
 

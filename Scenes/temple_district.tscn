@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=4 uid="uid://dp6q7trnadqdn"]
+[gd_scene load_steps=10 format=4 uid="uid://dp6q7trnadqdn"]
 
 [ext_resource type="TileSet" uid="uid://bxcwvv3usqcu" path="res://Resources/blockout_tileset.tres" id="1_f8vqh"]
+[ext_resource type="PackedScene" uid="uid://c8xaipvs243xi" path="res://Scenes/world_light.tscn" id="1_qcpg1"]
 [ext_resource type="PackedScene" uid="uid://dy1n2vvghk2d4" path="res://Scenes/reward.tscn" id="2_q1a6i"]
 [ext_resource type="PackedScene" uid="uid://cy5n3fmackde2" path="res://Scenes/player.tscn" id="2_qh4py"]
 [ext_resource type="Texture2D" uid="uid://pbe8buht2ork" path="res://Assets/Other/centaur_heart.webp" id="3_oxedx"]
@@ -12,10 +13,7 @@
 [node name="TempleDistrict" type="Node2D"]
 y_sort_enabled = true
 
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-color = Color(0.9722815, 0.5359915, 0.49764073, 1)
-energy = 0.4
-blend_mode = 1
+[node name="WorldLight" parent="." instance=ExtResource("1_qcpg1")]
 
 [node name="TileMaps" type="Node" parent="."]
 
