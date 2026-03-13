@@ -8,6 +8,8 @@ var move_direction : Vector2 = Vector2(0,0)
 
 func _physics_process(_delta: float) -> void:
 	move()
+	if Input.is_action_pressed("quit"):
+		get_tree().quit()
 	
 func move() -> void:
 	move_direction.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))

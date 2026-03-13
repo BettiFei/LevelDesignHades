@@ -1,13 +1,18 @@
-[gd_scene load_steps=6 format=4 uid="uid://y53qrppwpmk5"]
+[gd_scene load_steps=8 format=4 uid="uid://y53qrppwpmk5"]
 
+[ext_resource type="Script" uid="uid://rn8b8gkj3pxv" path="res://Scripts/level_entrance.gd" id="1_2i11j"]
 [ext_resource type="PackedScene" uid="uid://c8xaipvs243xi" path="res://Scenes/world_light.tscn" id="1_30bqu"]
 [ext_resource type="TileSet" uid="uid://bxcwvv3usqcu" path="res://Resources/blockout_tileset.tres" id="1_mi8gb"]
 [ext_resource type="Texture2D" uid="uid://dysw67qjc0xfy" path="res://Assets/Other/speech_bubble.png" id="2_fg5sb"]
 [ext_resource type="PackedScene" uid="uid://cy5n3fmackde2" path="res://Scenes/player.tscn" id="2_ry522"]
 [ext_resource type="PackedScene" uid="uid://c8p58re65dohs" path="res://Scenes/light_exit.tscn" id="4_fy40d"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30bqu"]
+size = Vector2(563.1084, 156.83496)
+
 [node name="LevelEntrance" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_2i11j")
 
 [node name="WorldLight" parent="." instance=ExtResource("1_30bqu")]
 
@@ -281,7 +286,17 @@ position = Vector2(3215, -2014)
 z_index = 6
 position = Vector2(3579, -1841)
 
+[node name="ExitLevelArea" type="Area2D" parent="."]
+z_index = 20
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLevelArea"]
+position = Vector2(3465.8484, -2135.0398)
+rotation = 0.46864098
+shape = SubResource("RectangleShape2D_30bqu")
+
 [node name="Player" parent="." instance=ExtResource("2_ry522")]
 z_index = 20
 y_sort_enabled = true
 position = Vector2(-304, 90)
+
+[connection signal="body_entered" from="ExitLevelArea" to="." method="_on_exit_level_area_body_entered"]

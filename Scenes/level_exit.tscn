@@ -137,7 +137,7 @@ scale = Vector2(0.9999999, 0.9999999)
 shape = SubResource("RectangleShape2D_6blap")
 
 [node name="VistaMarker" type="Marker2D" parent="."]
-position = Vector2(4768, -3100.4)
+position = Vector2(5076, -3609)
 
 [node name="Label_V-02" type="Label" parent="."]
 z_index = 19
@@ -154,14 +154,13 @@ theme_override_font_sizes/font_size = 38
 text = "V-02"
 
 [node name="Vista" type="Sprite2D" parent="."]
-position = Vector2(5403, -3095.4)
-scale = Vector2(0.8, 0.8)
+position = Vector2(5993, -3739)
 texture = ExtResource("5_6blap")
 region_rect = Rect2(0, 0, 1200, 732.7758)
 
 [node name="Player" parent="." instance=ExtResource("2_tuocj")]
 z_index = 20
-position = Vector2(3491, -2536)
+position = Vector2(-64, 96)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

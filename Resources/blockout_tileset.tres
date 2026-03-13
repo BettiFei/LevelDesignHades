@@ -706,6 +706,7 @@ texture_region_size = Vector2i(256, 512)
 7:2/1 = 1
 7:2/1/texture_origin = Vector2i(0, 192)
 7:2/1/modulate = Color(0.67058825, 0.3137255, 0.039215688, 1)
+7:2/1/physics_layer_0/polygon_0/points = PackedVector2Array(85.33334, -21.333332, -42.666664, 42.66667, 0, 64, 128, 0)
 
 [resource]
 tile_shape = 1
