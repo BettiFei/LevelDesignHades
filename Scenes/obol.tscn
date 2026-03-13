@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgnn2l0814s5q"]
+
+[ext_resource type="Texture2D" uid="uid://cse1taw2ncc2n" path="res://Assets/Other/obol.webp" id="1_6gx6r"]
+
+[node name="Obol" type="Sprite2D"]
+z_index = 2
+y_sort_enabled = true
+texture = ExtResource("1_6gx6r")

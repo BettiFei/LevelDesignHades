@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgpj1ln021yk3"]
+
+[ext_resource type="Texture2D" uid="uid://rdcwne6yfaha" path="res://Assets/Other/nectar.webp" id="1_8q8an"]
+
+[node name="Nectar" type="Sprite2D"]
+z_index = 2
+y_sort_enabled = true
+texture = ExtResource("1_8q8an")

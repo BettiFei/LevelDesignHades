@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://7thqemi43ose"]
+
+[ext_resource type="Texture2D" uid="uid://dg4afpa4uwt3f" path="res://Assets/Other/brazier.png" id="1_nue1s"]
+
+[sub_resource type="Gradient" id="Gradient_4m1is"]
+offsets = PackedFloat32Array(0, 0.6533333)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_i73a6"]
+gradient = SubResource("Gradient_4m1is")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="LightExit" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_nue1s")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -38)
+scale = Vector2(3, 3)
+color = Color(0.5974763, 0.5268081, 7.70092e-07, 1)
+energy = 0.9
+texture = SubResource("GradientTexture2D_i73a6")

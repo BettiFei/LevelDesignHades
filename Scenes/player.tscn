@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cy5n3fmackde2"]
+[gd_scene load_steps=13 format=3 uid="uid://cy5n3fmackde2"]
 
 [ext_resource type="Script" uid="uid://d31316k1ssank" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://kauqiewpw6ny" path="res://Assets/Human/0/Human_0_Idle0.png" id="1_v0iea"]
@@ -77,6 +77,15 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Gradient" id="Gradient_f1ek2"]
+offsets = PackedFloat32Array(0, 0.73333335)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tx1dd"]
+gradient = SubResource("Gradient_f1ek2")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_cvnsp")
@@ -92,3 +101,10 @@ polygon = PackedVector2Array(-38, 0, -24, -15, 0, -20, 24, -15, 38, 0, 24, 15, 0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.6, 0.6)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(1, -67)
+scale = Vector2(8, 8)
+color = Color(1, 0.63529414, 1, 1)
+energy = 0.4
+texture = SubResource("GradientTexture2D_tx1dd")
