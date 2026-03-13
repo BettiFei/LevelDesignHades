@@ -1,3 +1,175 @@
-[gd_scene format=3 uid="uid://bbgnflrs1maw0"]
+[gd_scene load_steps=8 format=4 uid="uid://bbgnflrs1maw0"]
+
+[ext_resource type="PackedScene" uid="uid://c8xaipvs243xi" path="res://Scenes/world_light.tscn" id="1_7x8y2"]
+[ext_resource type="Script" uid="uid://c6w4ykiefo25c" path="res://Scripts/level_exit.gd" id="1_61di1"]
+[ext_resource type="TileSet" uid="uid://bxcwvv3usqcu" path="res://Resources/blockout_tileset.tres" id="1_845nk"]
+[ext_resource type="PackedScene" uid="uid://cy5n3fmackde2" path="res://Scenes/player.tscn" id="2_tuocj"]
+[ext_resource type="PackedScene" uid="uid://c8p58re65dohs" path="res://Scenes/light_exit.tscn" id="3_61di1"]
+[ext_resource type="Texture2D" uid="uid://b5oecqr0wk72n" path="res://Assets/Other/vista_olympus.jpg" id="6_6blap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7x8y2"]
+size = Vector2(656.6072, 608.1967)
 
 [node name="LevelExit" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_61di1")
+
+[node name="WorldLight" parent="." instance=ExtResource("1_7x8y2")]
+
+[node name="TileMaps" type="Node" parent="."]
+
+[node name="00Ground" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD//wEAHAAIAAAAAAAAAAEAHAAIAAAAAAAAAAAAHAAIAAAAAAAAAP//HAAIAAAAAAAAAP7/HAAIAAAAAAAAAP3/HAAIAAAAAAD///3/HAAIAAAAAAD///z/HAAIAAAAAAD///7/HAAIAAAAAAD/////HAAIAAAAAAD//wAAHAAIAAAAAAAAAPz/HAAIAAAAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs01" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD///v/AwAKAAQAAQAAAPv/AwAKAAQAAQD+/wEABAADAAIAAAD+/wAABAADAAIAAAD+////BAADAAIAAAD+//7/BAADAAIAAAD+//3/BAADAAIAAAD+//z/BAADAAIAAAABAAEABAAAAAIAAAABAAAABAAAAAIAAAABAP//BAAAAAIAAAABAP7/BAAAAAIAAAABAP3/BAAAAAIAAAABAPz/BAAAAAIAAAABAPv/BAAAAAIAAAD+//v/BAADAAIAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs02" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 50)
+tile_map_data = PackedByteArray("AAD+//n/AwAKAAQAAQD///n/AwAKAAQAAQAAAPn/BAAAAAIAAAAAAPj/BAAAAAIAAAD9//n/BAADAAIAAAD9//j/BAADAAIAAAD9//r/AgAHAAEAAAAAAPr/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs03" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 100)
+tile_map_data = PackedByteArray("AAD9//f/AwAKAAQAAQD+//f/AwAKAAQAAQD///f/BAAAAAIAAAD///b/BAAAAAIAAAD8//f/BAADAAIAAAD8//b/BAADAAIAAAD8//j/AgAHAAEAAAD///j/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs04" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 150)
+tile_map_data = PackedByteArray("AAD8//X/AwAKAAQAAQD9//X/AwAKAAQAAQD7//X/BAADAAIAAAD7//T/BAADAAIAAAD+//X/BAAAAAIAAAD+//T/BAAAAAIAAAD7//b/AgAHAAEAAAD+//b/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs05" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 200)
+tile_map_data = PackedByteArray("AAD7//P/AwAKAAQAAQD8//P/AwAKAAQAAQD9//P/BAAAAAIAAAD9//L/BAAAAAIAAAD6//P/BAADAAIAAAD6//L/BAADAAIAAAD6//T/AgAHAAEAAAD9//T/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs06" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 250)
+tile_map_data = PackedByteArray("AAD6//H/AwAKAAQAAQD7//H/AwAKAAQAAQD5//H/BAADAAIAAAD5//D/BAADAAIAAAD8//H/BAAAAAIAAAD8//D/BAAAAAIAAAD5//L/AgAHAAEAAAD8//L/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs07" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 300)
+tile_map_data = PackedByteArray("AAD5/+//AwAKAAQAAQD6/+//AwAKAAQAAQD7/+//BAAAAAIAAAD7/+7/BAAAAAIAAAD4/+//BAADAAIAAAD4/+7/BAADAAIAAAD4//D/AgAHAAEAAAD7//D/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs08" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 350)
+tile_map_data = PackedByteArray("AAD4/+3/AwAKAAQAAQD5/+3/AwAKAAQAAQD3/+3/BAADAAIAAAD3/+z/BAADAAIAAAD6/+3/BAAAAAIAAAD6/+z/BAAAAAIAAAD3/+7/AgAHAAEAAAD6/+7/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs09" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 400)
+tile_map_data = PackedByteArray("AAD3/+v/AwAKAAQAAQD4/+v/AwAKAAQAAQD5/+v/BAAAAAIAAAD5/+r/BAAAAAIAAAD2/+v/BAADAAIAAAD2/+r/BAADAAIAAAD2/+z/AgAHAAEAAAD5/+z/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs10" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 450)
+tile_map_data = PackedByteArray("AAD2/+n/AwAKAAQAAQD3/+n/AwAKAAQAAQD1/+n/BAADAAIAAAD1/+j/BAADAAIAAAD4/+n/BAAAAAIAAAD4/+j/BAAAAAIAAAD1/+r/AgAHAAEAAAD4/+r/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Stairs11" type="TileMapLayer" parent="TileMaps"]
+y_sort_enabled = true
+position = Vector2(0, 500)
+tile_map_data = PackedByteArray("AAD1/+f/AwAKAAQAAQD2/+f/AwAKAAQAAQD3/+f/BAAAAAIAAAD3/+b/BAAAAAIAAAD0/+f/BAADAAIAAAD0/+b/BAADAAIAAAD0/+j/AgAHAAEAAAD3/+j/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="01Ground" type="TileMapLayer" parent="TileMaps"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, 500)
+tile_map_data = PackedByteArray("AAD1/+X/HAAIAAAAAAD1/+T/HAAIAAAAAAD0/+X/HAAIAAAAAAD0/+T/HAAIAAAAAAD2/+X/HAAAAAAAAAD2/+T/HAAAAAAAAAD0/+P/HAAIAAAAAAD0/+L/HAAIAAAAAAD0/+H/HAAIAAAAAAD1/+H/HAAIAAAAAAD1/+D/HAAIAAAAAAD2/+D/HAAAAAAAAAD2/+H/HAAAAAAAAAD2/+L/HAAAAAAAAAD2/+P/HAAAAAAAAAD1/+L/HAAIAAAAAAD1/+P/HAAIAAAAAAD0/+D/HAAIAAAAAAD0/9//HAAIAAAAAAD1/9//HAAIAAAAAAD2/9//HAAAAAAAAAD1/+b/HAACAAAAAAD2/+b/HAAGAAAAAAD0/+b/HAAHAAAAAAD0/97/HAAIAAAAAADz/97/HAAIAAAAAADz/93/HAAIAAAAAADy/93/HAAIAAAAAADx/93/HAAIAAAAAADx/9z/HAAIAAAAAADy/97/HAAIAAAAAADw/93/HAAIAAAAAADw/9z/HAAIAAAAAADw/9v/HAAIAAAAAADw/9r/HAAIAAAAAADx/9n/HAAIAAAAAADy/9n/HAAIAAAAAADz/9j/HAAIAAAAAAD0/9j/HAAIAAAAAAD0/9n/HAAIAAAAAAD1/9n/HAAIAAAAAAD1/9j/HAAIAAAAAAD2/9j/HAAIAAAAAAD3/9j/HAAIAAAAAADy/9j/HAAIAAAAAAD0/9f/HAAIAAAAAAD1/9f/HAAIAAAAAAD2/9f/HAAIAAAAAAD4/9j/HAAIAAAAAAD5/9n/HAAIAAAAAAD6/9r/HAAIAAAAAAD4/97/HAAIAAAAAAD3/97/HAAIAAAAAAD2/97/HAAIAAAAAAD1/97/HAAIAAAAAAD0/93/HAAIAAAAAADz/9n/HAAIAAAAAADz/9r/HAAIAAAAAADy/9r/HAAIAAAAAADx/9r/HAAIAAAAAADx/9v/HAAIAAAAAADy/9v/HAAIAAAAAADy/9z/HAAIAAAAAADz/9z/HAAIAAAAAADz/9v/HAAIAAAAAAD0/9v/HAAIAAAAAAD0/9z/HAAIAAAAAAD0/9r/HAAIAAAAAAD1/9v/HAAIAAAAAAD1/9z/HAAIAAAAAAD1/9r/HAAIAAAAAAD2/9n/HAAIAAAAAAD2/9r/HAAIAAAAAAD2/9v/HAAIAAAAAAD2/9z/HAAIAAAAAAD3/9z/HAAIAAAAAAD3/9r/HAAIAAAAAAD3/9v/HAAIAAAAAAD3/9n/HAAIAAAAAAD6/9v/HAAIAAAAAAD6/9z/HAAIAAAAAAD6/93/HAAIAAAAAAD5/93/HAAIAAAAAAD4/93/HAAIAAAAAAD3/93/HAAIAAAAAAD2/93/HAAIAAAAAAD1/93/HAAIAAAAAAD4/9n/HAAIAAAAAAD4/9r/HAAIAAAAAAD4/9v/HAAIAAAAAAD4/9z/HAAIAAAAAAD5/9r/HAAIAAAAAAD5/9v/HAAIAAAAAAD5/9z/HAAIAAAAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="01Walls" type="TileMapLayer" parent="TileMaps"]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(0, 550)
+tile_map_data = PackedByteArray("AADz/+X/BAADAAIAAADz/+T/BAADAAIAAADz/+P/BAADAAIAAADz/+L/BAADAAIAAADz/+H/BAADAAIAAADz/+D/BAADAAIAAADz/9//BAADAAIAAAD2/+X/BAAAAAIAAAD2/+T/BAAAAAIAAAD2/+P/BAAAAAIAAAD2/+L/BAAAAAIAAAD2/+H/BAAAAAIAAAD2/+D/BAAAAAIAAAD2/9//BAAAAAIAAADz/97/AwAIAAAAAAD2/97/AwAIAAAAAADz/9f/AgAFAAEAAAD2/9f/AgAFAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="01Walls2" type="TileMapLayer" parent="TileMaps"]
+z_index = 3
+y_sort_enabled = true
+position = Vector2(0, 550)
+tile_map_data = PackedByteArray("AADy/93/AgAGAAEAAAD1/93/AgAGAAEAAAA=")
+tile_set = ExtResource("1_845nk")
+
+[node name="Lights" type="Node" parent="."]
+
+[node name="LightExit" parent="Lights" instance=ExtResource("3_61di1")]
+z_index = 2
+position = Vector2(-53, -53)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 20
+position = Vector2(1704.7108, -1547.4537)
+rotation = 0.48086452
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_7x8y2")
+
+[node name="Label_V-02" type="Label" parent="."]
+z_index = 19
+offset_left = 3942.0
+offset_top = -2820.0
+offset_right = 4021.0
+offset_bottom = -2767.0
+theme_override_colors/font_color = Color(0.99215686, 0.827451, 0.5803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 5
+theme_override_font_sizes/font_size = 38
+text = "V-02"
+
+[node name="Vista" type="Sprite2D" parent="."]
+position = Vector2(4580, -3080.0002)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_6blap")
+region_enabled = true
+region_rect = Rect2(0, 0, 1200, 732.7758)
+
+[node name="Player" parent="." instance=ExtResource("2_tuocj")]
+z_index = 20
+position = Vector2(-72, 92)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FlashRect" type="ColorRect" parent="CanvasLayer/Control"]
+z_index = 30
+y_sort_enabled = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.95686275, 0.8, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_light_effect_area_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_light_effect_area_body_exited"]
