@@ -106,7 +106,7 @@ script = ExtResource("10_tx1dd")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(1, -67)
-scale = Vector2(8, 8)
+scale = Vector2(9, 9)
 color = Color(1, 0.63529414, 1, 1)
 energy = 0.4
 texture = SubResource("GradientTexture2D_tx1dd")
